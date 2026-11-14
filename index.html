@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#FDF8F3">
+<title>心迹 · 你的理想伴侣</title>
+<style>
+:root{--bg:#FDF8F3;--surface:#fff;--primary:#E8B4A0;--deep:#D98E73;--sage:#C9D6C4;--ink:#4A4038;--muted:#9A8F86;--line:#EFE6DE}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.7 "Microsoft YaHei","PingFang SC",sans-serif}button{font:inherit;cursor:pointer;color:inherit}button:disabled{cursor:default}button:focus-visible,a:focus-visible{outline:3px solid var(--deep);outline-offset:4px}header{height:80px;max-width:1080px;margin:auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:25px Georgia,"STKaiti",serif}.brand small{font:10px sans-serif;letter-spacing:0;color:var(--muted);margin-left:12px}header span{font-size:12px;color:var(--muted)}main{max-width:960px;margin:auto;padding:36px 28px 60px}.serif,h1,h2,h3{font-family:"STKaiti","KaiTi","Songti SC",serif;font-weight:500}h1{font-size:42px;line-height:1.4;margin:18px 0}h2{font-size:27px;line-height:1.5}h3{font-size:20px;margin:0 0 12px}p{margin:12px 0}.muted{color:var(--muted);font-size:12px}.pill{display:inline-block;padding:5px 13px;border-radius:99px;background:#f5e8e0;font-size:12px}.primary,.secondary{border:0;border-radius:99px;min-height:52px;padding:12px 26px;display:inline-flex;align-items:center;justify-content:center;gap:16px}.primary{background:var(--deep);color:white}.secondary{background:transparent;border:1px solid var(--primary)}.primary:disabled{background:#E5DDD5}.cover{text-align:center;max-width:680px;margin:auto}.cover p{color:var(--muted)}.scene{width:100%;height:260px;object-fit:cover;object-position:center 58%;border-radius:16px;margin:24px 0 14px}.cover .primary{min-width:270px}.facts{display:flex;justify-content:center;gap:34px;margin:26px 0}.facts strong{display:block;font:24px Georgia,serif;color:var(--ink)}.facts span{font-size:11px;color:var(--muted)}.bottom-note{margin:22px auto;font-size:11px;color:var(--muted);text-align:center}.quiz{max-width:610px;margin:auto}.toolbar{display:flex;justify-content:space-between;align-items:center}.icon{background:none;border:1px solid var(--line);width:38px;height:38px;border-radius:50%;font-size:20px}.progress{display:flex;align-items:center;gap:18px;margin:22px 0 32px;font:13px Georgia,serif}.track{height:6px;flex:1;background:var(--line);border-radius:9px;overflow:hidden}.fill{height:100%;background:var(--deep);transition:width .3s}.question-top{display:flex;justify-content:space-between;align-items:center}.quiz h2{margin:18px 0 8px;min-height:76px}.options{display:grid;gap:12px;margin:24px 0}.option{min-height:66px;display:flex;align-items:center;gap:16px;text-align:left;padding:14px 18px;border:2px solid transparent;border-radius:16px;background:white;box-shadow:0 2px 8px #4a403808}.option.selected{border-color:var(--primary);background:#FDF1EC}.letter{width:32px;height:32px;flex-shrink:0;display:grid;place-items:center;background:#faf0ea;border-radius:50%;font-size:13px}.selected .letter{background:var(--primary);color:white}.option .label{flex:1}.mark{width:20px;height:20px;border:1px solid #dfd6cd;border-radius:50%;display:grid;place-items:center;font-size:12px;color:transparent;flex-shrink:0}.multi .mark{border-radius:5px}.selected .mark{background:var(--deep);border-color:var(--deep);color:white}.option:disabled{opacity:.4}.next{width:100%;justify-content:space-between}.actions{display:flex;gap:12px;flex-wrap:wrap}.actions>*{flex:1;min-width:150px}.loading{text-align:center;padding:160px 0}.dots{display:flex;justify-content:center;gap:8px;margin:30px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--primary);animation:bounce 1s infinite}.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}@keyframes bounce{50%{transform:translateY(-10px)}}.result{max-width:760px;margin:auto}.result-hero{position:relative;overflow:hidden;border-radius:16px;height:240px;background:var(--sage)}.result-hero img{width:100%;height:100%;object-fit:cover}.result-hero span{position:absolute;bottom:16px;left:20px;background:#fffffff0;padding:6px 14px;border-radius:99px;font-size:12px}.result h1{font-size:34px;margin-bottom:12px}.tags{display:flex;gap:8px;flex-wrap:wrap}.tags span{background:#f5e8e0;padding:4px 13px;border-radius:99px;font-size:12px}.type-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0}.type-card{padding:18px 20px;background:white;border-radius:12px;border-top:3px solid var(--deep)}.type-card b{display:block;font-weight:500;font-size:18px;margin-top:6px}.report{display:grid;grid-template-columns:1fr 1fr;gap:26px 40px;margin:32px 0}.report p{font-size:14px;line-height:1.9;word-break:normal;overflow-wrap:anywhere}.wide{grid-column:1/-1}.score-row{display:grid;grid-template-columns:86px 1fr 28px;gap:14px;align-items:center;font-size:12px;margin:12px 0}.score-row .track{height:7px}.score-row .fill{background:var(--deep)}blockquote{margin:16px 0 30px;padding:12px 20px;border-left:3px solid var(--deep);background:#f9e9e1;font-size:15px}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;padding:10px 20px;border-radius:99px;font-size:13px;z-index:5;max-width:90%;text-align:center}.link{background:none;border:0;text-decoration:underline;color:var(--muted);font-size:12px}.footer{text-align:center;color:var(--muted);font-size:11px;margin-top:36px}@media(min-width:800px){.cover{padding-top:16px}.cover h1{font-size:46px}.scene{height:290px}.quiz{padding-top:12px}}@media(max-width:600px){header{height:64px;padding:0 20px}header>span{font-size:10px}.brand{font-size:22px}.brand small{display:none}main{padding:24px 20px 40px}h1{font-size:32px}.scene{height:205px;margin-top:20px}.facts{margin:20px 0;gap:30px}.cover .primary{width:100%}.quiz h2{font-size:22px;min-height:66px}.option{padding:12px;gap:12px;min-height:64px}.progress{margin-bottom:25px}.report{grid-template-columns:1fr;gap:18px}.wide{grid-column:auto}.result h1{font-size:27px}.result-hero{height:200px}.type-pair{gap:10px}.type-card{padding:14px}.type-card b{font-size:16px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* */
+</style>
+</head>
+<body><header><div class="brand">心迹<small>HEART NOTES</small></div><span>亲密关系探索 · 伴侣偏好测试</span></header><main id="app"></main><div id="toast" class="toast" role="status" hidden></div>
+<script>
+const DIM=['A','B','C','D','E','F','G','H'];
+const names=['情绪陪伴','独立空间','稳定务实','冒险新鲜','深度沟通','行动照顾','社交活力','成长驱动'];
+const Q=[
+['周五晚上你理想中的约会方式是？','窝在家里点外卖看剧，有人陪着就好|A','各自忙自己的，睡前聊两句|B','一起逛超市做饭，规划周末|C','临时起意去没去过的地方|D'],
+['你心情低落时最希望对方？','立刻察觉并耐心哄你|A','给你空间，等你想说再说|B','帮你把实际问题解决掉|F','陪你聊到想通为止|E'],
+['你更接受哪种“我爱你”的表达？','每天说想你、抱抱亲亲|A','记得你的喜好、默默安排好|F','和你认真讨论未来规划|C','带你体验新鲜事物|D'],
+['关于手机和社交账号，你希望？','可以互相看，透明才安心|A','各管各的，不查不问|B','重要的事主动报备就行|C','一起玩、共同朋友多才热闹|G'],
+['吵架后你更需要？','对方先来哄你、给台阶|A','冷静几小时再谈|B','就事论事把问题说清楚|E','用行动补救，比如做饭送礼物|F'],
+['你理想中两个人周末的节奏是？','找个好地方约会聚餐|A','各忙各的，活动随缘|B','一起做饭采购宅在家|C','探索新事务或短途旅行|D'],
+['你更看重伴侣的？','情绪稳定、会共情|AE','靠谱、有责任心|C','有趣、敢玩|DG','上进、有目标|H'],
+['对方和异性朋友单独吃饭，你会？','不太舒服，希望提前说|A','无所谓，信任就行|B','看情况，正常社交可以|C','最好一起认识，大家做朋友|G'],
+['你希望对方怎么支持你的事业／学习？','多鼓励多陪伴|A','不打扰就是支持|B','帮你分担生活琐事|F','和你一起定目标、互相监督|H'],
+['你心中“家”的感觉更接近？','温暖、有回应的地方|A','各自安好、互不打扰|B','干净有序、有烟火气|C','朋友常来、热热闹闹|G'],
+['你最希望伴侣具备哪些特质？','共情力强，会安慰人|A','尊重边界，不黏人|B','生活能力强，会照顾人|F','有规划，财务清晰|C','幽默有趣，会玩|D','爱学习，有上进心|H'],
+['哪些场景会让你觉得“被爱着”？','难过时被抱住|A','对方记得你说过的小事|F','一起完成一个目标|H','一起探索新地方|D','深夜长谈聊三观|E','带你进入他的朋友圈|G'],
+['你无法忍受伴侣的哪些行为？','冷暴力、不回应|A','查岗、控制欲强|B','花钱没计划、月光|C','太宅、生活一成不变|D','拒绝沟通、回避问题|E','只顾自己、不承担家务|F'],
+['你希望两个人一起做的事？','每天有固定聊天时间|A','各自有独处时间|B','一起做饭、打理家|CF','一起运动、打卡新体验|DH','一起参加朋友聚会|G','一起读书、上课、复盘|EH'],
+['对方加班很晚没回消息，你会？','有点失落，希望他说一声|A','正常，忙完再说|B','先把家里的事处理好|C','自己去玩，不等他|D'],
+['你更愿意和伴侣？','分享每天的情绪细节|A','保持各自生活节奏|B','一起做家庭计划|C','一起尝试新爱好|D'],
+['关于钱，你更认同？','愿意为对方花，也要情感回应|A','AA或各管各的|B','共同账户、一起规划|C','钱花在体验和旅行上|D'],
+['你希望伴侣在你朋友面前？','黏着你、给足安全感|A','自然就好，不用刻意|B','得体、会照顾场面|G','能和大家玩成一片|G'],
+['遇到重大决定（换城市／换工作），你希望？','对方情绪上支持你|A','尊重你的选择不干涉|B','一起算账、评估风险|C','鼓励你闯，一起冒险|D'],
+['你理想中的亲密频率是？','高频陪伴、常联系|A','适度，各自有空间|B','稳定规律、像家人|C','随心情、有新鲜感|D'],
+['对方情绪崩溃时你会？','先共情安抚|A','给空间让他自己消化|B','帮他梳理问题、给方案|E','拉他出门散心|D'],
+['你更向往哪种相处画面？','沙发上靠着聊天|A','各看各的书|B','一起收拾家、做饭|CF','背包出发去旅行|D'],
+['你希望对方如何参与你的成长？','多肯定多鼓励|A','不拖后腿就行|B','帮你兜底生活|F','一起定计划、互相监督|H'],
+['长期关系里你最怕？','没有回应、情感冷淡|A','失去自我、被绑太紧|B','没有规划、得过且过|C','一眼望到头、没意思|D'],
+['你希望伴侣在冲突中？','先安抚情绪再讲道理|A','给彼此冷静时间|B','主动承担、用行动补救|F','坐下来把逻辑理清|E','事后一起复盘改进|H'],
+['你的“理想生活”包含？','每天有人等你回家|A','有独立书房／空间|B','稳定收入、有储蓄|C','每年多次旅行|D','有共同的朋友圈|G','每年一起学新东西|H'],
+['你更被哪种人吸引？','温柔会哄人的|A','清冷有边界感的|B','踏实会过日子的|CF','有趣爱冒险的|D','聊得来有深度的|E','自律上进的|H'],
+['你希望关系里“仪式感”体现在？','每天早安晚安、抱抱|A','不刻意，舒服就好|B','纪念日认真过、有安排|C','说走就走的小惊喜|D','一起完成年度目标|H','和朋友一起庆祝|G']
+];
+const types={
+A:{name:'情绪充电宝',tags:['高回应','共情','安全感'],self:'你需要被看见、被理解，也珍惜日常里细小而及时的情感回应。',core:'高情绪回应、共情力强、让你有安全感。',portrait:'会记得你随口说的话，你皱眉就问怎么了；吵架先低头；每天有固定聊天时间。',advice:'别把“哄”当唯一标准，也要看对方是否稳定，而非一时上头。',best:['C','E'],caution:'B',risk:'你期待及时回应，对方却可能习惯独处，需要提前说清联系频率。',color:'#d98e73',tint:'#f9e9e1'},
+B:{name:'边界感搭子',tags:['独立空间','信任','自在'],self:'你享受亲密，也需要保有自己的节奏；被信任比被时时关注更让你安心。',core:'尊重空间、低黏度、信任感强。',portrait:'不查手机、不连环打电话，各自忙完自然汇合；有事说事，不情绪绑架。',advice:'边界不等于冷漠，确认对方在你需要时会出现。',best:['E','H','C'],caution:'A',risk:'双方对陪伴频率的期待不同，容易把独处理解成不在乎。',color:'#789788',tint:'#e8eee8'},
+C:{name:'生活合伙人',tags:['稳定','责任感','有规划'],self:'你看重可以落地的承诺，希望两个人一起把普通日子过得安稳、有序。',core:'稳定、务实、有规划、能落地。',portrait:'会做预算、记得交水电、周末采购做饭；重大决定一起算账。',advice:'别让“务实”变成无趣，留一点新鲜感。',best:['F','H','A'],caution:'D',risk:'你看重计划，对方更重视即兴体验，需要协商预算和生活节奏。',color:'#b69a69',tint:'#f1eadc'},
+D:{name:'冒险同伙',tags:['新鲜感','探索','行动力'],self:'你渴望一起探索世界的关系，新的体验和共同的故事让你保持心动。',core:'新鲜感、行动力、一起探索。',portrait:'说走就走，爱试新店新路线；吵架后愿意陪你出门散心。',advice:'确认对方关键时刻靠得住，不只顾玩。',best:['G','H','A'],caution:'C',risk:'你期待变化，对方偏好稳定，需要在探索与日常责任之间找平衡。',color:'#b78064',tint:'#f5e6dc'},
+E:{name:'灵魂聊友',tags:['深聊','精神共鸣','理解'],self:'你重视三观与交流，希望想法被认真倾听，冲突也能成为互相理解的机会。',core:'深度沟通、精神共鸣、聊得来。',portrait:'能聊到凌晨，冲突时愿意把问题讲清楚，也愿意复盘关系。',advice:'别只聊不做，观察行动力。',best:['H','B','A'],caution:'F',risk:'你想深入讨论，对方可能习惯直接做事，需要互相翻译表达爱的方式。',color:'#8d8ca2',tint:'#edeaf2'},
+F:{name:'行动照顾派',tags:['实际照顾','靠谱','细心'],self:'你相信爱藏在具体的小事里；有人记得你的需要、主动分担，会让你踏实。',core:'用做事表达爱、生活能力强、靠谱。',portrait:'你生病时买药做饭；记得你忌口；默默把事办好。',advice:'确认对方也愿意表达情绪，别只剩“办事”。',best:['C','A','H'],caution:'E',risk:'你看重实际行动，对方重视语言交流，需要把需求说具体。',color:'#819b82',tint:'#e7eee4'},
+G:{name:'社交活力源',tags:['热闹','共同圈子','分享'],self:'你喜欢共享生活与朋友圈，一起见朋友、一起庆祝，会让关系更有生命力。',core:'热闹、共同朋友圈、外向带动。',portrait:'朋友多、爱组局，愿意带你认识自己的圈子。',advice:'确认对方在二人世界也专注，不总被朋友分走。',best:['D','A','C'],caution:'B',risk:'你喜欢共同社交，对方需要更多独处，适合约定各自与共同的时间。',color:'#c18c9a',tint:'#f4e6eb'},
+H:{name:'成长合伙人',tags:['共同进步','自律','目标感'],self:'你向往彼此支持、一起进步的关系，希望未来的计划里始终有两个人。',core:'上进、自律、互相督促。',portrait:'一起定目标、打卡学习，也会一起做年度复盘。',advice:'别把关系变成 KPI，留一点松弛感。',best:['E','C','D'],caution:'B',risk:'你期待共同推进目标，对方更在意自主节奏，需要确认督促的边界。',color:'#7799a0',tint:'#e5eff0'}
+};
+const combo={AC:'温柔又会过日子',AE:'既懂情绪又能深聊',AD:'会哄也会带你玩',BE:'清冷但聊得来',BH:'各自成长型伴侣',BC:'互不打扰但生活靠谱',CF:'被照顾感拉满',CH:'共同攒钱进阶',CA:'稳重又温柔',DG:'社交冒险双开',DH:'边玩边成长',DA:'疯完还会哄你',EH:'精神共鸣、共同成长',EB:'清冷深聊型',EA:'又懂你又哄你',FC:'居家型搭档',FA:'会照顾也会哄',FH:'务实上进型',GD:'玩伴型',GA:'热闹又黏人',GC:'会社交也会过日子',HE:'精神共鸣型伴侣',HC:'攒钱进阶型',HD:'边玩边成长'};
+const comboProfile={
+AB:'需要呼吸感的黏人精',AC:'要浪漫也要面包的清醒派',AD:'被哄着去冒险的心动派',AE:'能共情也要聊到深夜的灵魂派',AF:'把情绪落到行动里的被照顾派',AG:'既要私密回应也要一起热闹',AH:'被理解着一起变好的进阶派',
+BA:'亲密有度的自由派',BC:'各自独立但一起过日子的搭档',BD:'低黏度也爱新鲜的轻盈派',BE:'清醒克制却渴望深聊',BF:'不说甜话但要看见行动',BG:'独处和社交都要掌握节奏',BH:'各自成长、彼此报备的同路人',
+CA:'靠谱底色上的温柔派',CB:'有计划也给彼此空间的稳稳派',CD:'先把日子过好再一起出发',CE:'能算清生活也聊透内心',CF:'被照顾感拉满的生活派',CG:'会过日子也愿意把朋友带回家',CH:'共同攒钱进阶的长期主义者',
+DA:'疯完还会哄你的行动派',DB:'不被束缚的探索者',DC:'有预算的冒险家',DE:'边玩边聊出新世界',DF:'用体验表达在乎',DG:'社交冒险双开',DH:'边玩边成长',
+EA:'又懂你又哄你的深聊派',EB:'清冷但聊得来的观察者',EC:'既讲三观也讲落地',ED:'把聊天变成共同故事',EF:'听得懂你的沉默也会做事',EG:'有灵魂也有人气',EH:'精神共鸣、共同成长',
+FA:'会照顾也会哄',FB:'尊重边界的行动派',FC:'居家型天花板',FD:'把照顾变成一起体验',FE:'少说空话、愿意解决问题',FG:'把爱落实到共同生活',FH:'务实上进型',
+GA:'热闹又黏人',GB:'社交有边界的分享派',GC:'会社交也会过日子',GD:'玩伴型',GE:'朋友很多但也聊得深',GF:'用组局和行动表达爱',GH:'一起认识世界也一起进步',
+HA:'鼓励与回应并重的成长派',HB:'各自成长型伴侣',HC:'攒钱进阶型',HD:'边玩边成长',HE:'高知成长型',HF:'务实上进型',HG:'一起升级朋友圈和人生'
+};
+const highTags={A:'情绪雷达常开',B:'边界感守卫者',C:'生活合伙人脑',D:'新鲜感捕手',E:'灵魂深聊派',F:'行动照顾派',G:'社交能量源',H:'共同成长派'};
+const lowTags={A:'低回应敏感区',B:'需要被陪伴',C:'反计划倾向',D:'舒适区常住人口',E:'不爱过度分析',F:'讨厌只说不做',G:'低社交耗能',H:'拒绝被督促'};
+function profileFor(r){const vals=DIM.map(d=>r.total[d]),hi=Math.max(...vals),lo=Math.min(...vals),high=DIM.filter(d=>r.total[d]>12),low=DIM.filter(d=>r.total[d]<5),hiD=DIM[vals.indexOf(hi)],loD=DIM[vals.indexOf(lo)];let contrast='你的关系偏好比较均衡，适合用沟通把不同需求调成同一拍。';if(hiD!==loD&&hi-lo>=8){const lines={AB:'你的恋爱像一部有人及时回应、也留有个人房间的室内情景剧。',AD:'你既要被好好安慰，也想偶尔把日子过成公路片。',AC:'你要温柔的回应，也要能把生活安排妥当的可靠感。',CD:'你在稳定和新鲜之间拉扯：既想有计划，又不想一眼望到头。',BE:'你需要被理解，但不接受被管太紧；深聊要建立在尊重边界上。',DF:'你喜欢一起体验新鲜事，也会用具体行动确认对方在乎。',GH:'你的关系需要人气，也需要一起变好的方向。'};contrast=lines[hiD+loD]||`你的关系图谱呈现“${names[DIM.indexOf(hiD)]}高、${names[DIM.indexOf(loD)]}低”的反差：优势很鲜明，也要留意短板对关系的影响。`;}return{hi,lo,hiD,loD,high,low,contrast};}
+const photo='cover.jpg';
+const storageKey='heart-notes-v2';let answers=Q.map(()=>[]),index=0,state='cover',result=null;
+try{const saved=JSON.parse(localStorage.getItem(storageKey));if(saved&&Array.isArray(saved.answers)&&saved.answers.length===28){answers=saved.answers.map((a,i)=>Array.isArray(a)?[...new Set(a.filter(v=>Number.isInteger(v)&&v>=0&&v<Q[i].length-1))].slice(0,isMulti(i)?3:1):[]);index=Math.max(0,Math.min(27,Number(saved.index)||0));}}catch{}
+const app=document.getElementById('app');
+function isMulti(i){return i>=10&&i<=13||i>=24;}
+function save(){try{localStorage.setItem(storageKey,JSON.stringify({answers,index}));}catch{}}
+function notify(s){const el=document.getElementById('toast');el.textContent=s;el.hidden=false;clearTimeout(notify.timer);notify.timer=setTimeout(()=>el.hidden=true,3000);}
+function calculate(data){const total=Object.fromEntries(DIM.map(d=>[d,0])),late={...total},multi={...total};data.forEach((a,i)=>a.forEach(j=>{for(const d of Q[i][j+1].split('|')[1]){total[d]+=isMulti(i)?1:2;if(isMulti(i))multi[d]++;if(i>=24)late[d]++;}}));const ranked=[...DIM].sort((a,b)=>total[b]-total[a]||late[b]-late[a]||multi[b]-multi[a]||DIM.indexOf(a)-DIM.indexOf(b));return{total,late,ranked,main:ranked[0],sub:ranked[1]};}
+function start(){state='quiz';render();}
+function reset(){answers=Q.map(()=>[]);index=0;save();state='quiz';render();}
+function select(j){if(isMulti(index)){const a=answers[index],p=a.indexOf(j);if(p>=0)a.splice(p,1);else if(a.length<3)a.push(j);}else answers[index]=[j];save();render();}
+function back(){if(index>0)index--;else state='cover';save();render();}
+function next(){if(!answers[index].length)return;if(index<27){index++;save();render();window.scrollTo(0,0);}else{const missing=answers.findIndex(a=>!a.length);if(missing>=0){index=missing;render();return;}state='loading';render();setTimeout(()=>{result=calculate(answers);state='result';render();window.scrollTo(0,0);},1600);}}
+function storyFor(r){const v=r.total,o=[...DIM].sort((a,b)=>v[b]-v[a]),a=o[0],b=o[1],c=o[2],low=[...DIM].sort((x,y)=>v[x]-v[y]);const need={A:'被及时回应和偏爱',B:'被尊重边界、拥有自己的呼吸感',C:'可靠、能落地的生活安排',D:'偶尔被带去体验新鲜事',E:'把想法聊深、被真正听懂',F:'有人用具体行动照顾你',G:'有人愿意把生活分享给你',H:'两个人一起变得更好'},avoid={A:'冷淡和没有回应',B:'被管得太紧',C:'失控和没有计划',D:'一成不变的日子',E:'话说不到心里',F:'只说不做的承诺',G:'长期封闭在两个人的世界',H:'被关系拖住脚步'};const special={AC:'你是一个现实里很清醒、情感上却愿意被偏爱的人。你会把日子安排得妥妥当当，但真正让你放松的，是有人在细节里回应你。你不需要铺张的浪漫，可靠的照顾和一句及时的“我在”就足够让你心软。',AE:'你对关系的要求有两层：先被温柔接住，再被认真听懂。你能独立处理生活，却不愿在亲密关系里独自消化情绪；真正的安全感来自回应和深聊同时存在。',AB:'你想靠近，也想保留退回自己的房间。你享受情绪确认，但一旦感觉被控制就会后退；最舒服的关系，是对方知道什么时候抱紧，什么时候安静陪着。',CD:'你并不排斥新鲜，只是希望冒险建立在可靠的地基上。你会先确认生活不会失控，再放心把自己交给一次临时起意的出发。',CF:'你很少被漂亮话打动，真正让你产生依赖的是有人把小事做好。你有自己的标准和安排，亲密关系里却会因为持续、具体的照顾而慢慢卸下防备。',DH:'你需要一个会和你一起行动、也愿意一起成长的人。无聊会消耗你，但只有热闹也留不住你；共同完成一件事，比单纯制造刺激更能让你心动。'};const self=special[a+b]||`你把${need[a]}放在关系的核心，同时也在意${need[b]}。你看起来${a==='C'||a==='H'?'很有自己的节奏和判断':'比自己想象中更需要被理解'}，但亲密关系里最难妥协的是${avoid[low[0]]}。你不是只追求一种单一的爱，而是在寻找一种既能让你安心、又不会让你失去自己的相处方式。`;const partner=`适合你的伴侣，不是某一个固定标签，而是能同时做到${need[a]}和${need[b]}的人。他/她应该在你需要时给出明确回应，在日常里用${need[c]}让关系落地；同时尊重你对${avoid[low[0]]}的敏感，不用${avoid[low[1]]}来证明在乎。你们最好的状态，是把差异变成分工：对方给你稳定的底，你也把关系里的温度和方向带回来。`;return{self,partner};}
+function expandReport(r){const v=r.total,o=[...DIM].sort((a,b)=>v[b]-v[a]),a=o[0],b=o[1],c=o[2],low=[...DIM].sort((x,y)=>v[x]-v[y]);const need={A:'情绪回应',B:'个人空间',C:'稳定规划',D:'新鲜体验',E:'深度交流',F:'实际照顾',G:'共同社交',H:'共同成长'},avoid={A:'被冷落',B:'被控制',C:'生活失序',D:'关系无聊',E:'无法沟通',F:'承诺落空',G:'长期封闭',H:'互相拖累'};const self=`你在关系里最看重${need[a]}，但真正让你满足的并不是单一的高频陪伴，而是${need[b]}与${need[c]}能够同时存在。你会在意对方是否${a==='C'||a==='H'?'靠谱、有计划并且说到做到':'愿意主动理解你的情绪'}，也会通过日常细节判断这段关系有没有在变好。你不太适合用一种固定模式谈恋爱：当关系只剩下${avoid[low[0]]}时，你会慢慢失去安全感；当对方只给你${need[a]}、却忽略${need[b]}时，你也会觉得自己没有被完整看见。你的理想状态，是有人接住你的敏感，同时允许你保留自己的节奏。`;const partner=`适合你的伴侣，需要同时具备${need[a]}、${need[b]}和${need[c]}这三种能力：在情绪上能${a==='A'?'及时回应你':'听懂你的真实需要'}，在生活上能${c==='C'||c==='F'?'把具体事情做好':'愿意一起承担'}，在长期关系里又不会用${avoid[low[0]]}消耗你。发生冲突时，对方应该先确认你的感受，再和你讨论解决办法；平时则用稳定的小行动，而不是偶尔一次的大惊喜，持续建立信任。你们最容易走远的相处方式，是把差异变成分工：对方给你可靠的底，你也把关系里的温度、反馈或方向带回来。`;return{self,partner};}
+function partnerFor(r){
+  const v = r.total;
+  const o = [...DIM].sort((a,b)=>v[b]-v[a]);
+  const a = o[0], b = o[1];
+  const low = [...DIM].sort((x,y)=>v[x]-v[y]);
+  const lo = low[0];
+  const hiScore = v[a], loScore = v[lo];
+
+  const actDetail = {
+    A:'你皱眉时TA会先问“怎么了”，而不是等你开口；吵架后愿意先给台阶，不冷战过夜',
+    B:'不会连环追问你在干嘛，你想一个人待着时TA能自己安排，等你出来再自然汇合',
+    C:'把承诺当回事，说好的事会放在心上；遇到重要的事不躲不拖，愿意和你一起面对、一起把问题解决掉',
+    D:'不甘心把日子过成重复流程，会主动提议一起试试没做过的事，让关系里一直有新的东西可聊、可期待',
+    E:'愿意陪你聊到深夜，吵架时不冷处理，会把问题摊开讲清楚，也愿意听你说完',
+    F:'你生病时TA会买药做饭，记得你忌口的东西，把在乎落在具体小事上而不是嘴上说说',
+    G:'愿意带你进自己的朋友圈，组局时自然把你介绍给大家，让你觉得被公开认可',
+    H:'会和你一起定目标、定期复盘，也会在你松懈时温和地推一把，而不是放任你'
+  };
+  const why = {
+    A:`你在「情绪陪伴」上拿到 ${hiScore} 分，是八维里最高的一项——你要的不是偶尔的甜，而是稳定的、可预期的回应`,
+    B:`你的「独立空间」得分 ${hiScore} 排在前面——亲密对你来说不等于时时刻刻绑定，能各自安好再汇合才舒服`,
+    C:`「稳定务实」是你的高分项（${hiScore} 分）——你需要看得见、落得地的承诺，而不是空口说爱`,
+    D:`「冒险新鲜」得分 ${hiScore} 领先——一成不变会消耗你，共同经历才是你的心动来源`,
+    E:`「深度沟通」${hiScore} 分是你最突出的偏好——聊不到心里，你会觉得没被真正看见`,
+    F:`「行动照顾」拿到 ${hiScore} 分——漂亮话打动不了你，具体的小事才能让你踏实`,
+    G:`「社交活力」${hiScore} 分说明——共享的生活现场和朋友圈会让你更有归属感`,
+    H:`「成长驱动」${hiScore} 分最高——你希望关系是往前走的，而不是原地打转`
+  };
+  const actB = {
+    A:'在你需要的时候及时给出回应', B:'尊重你独处的节奏，不步步紧逼',
+    C:'把生活的具体安排做得有条有理', D:'主动提议一起去做没做过的事',
+    E:'愿意和你把问题聊深聊透', F:'用实际的行动而不是语言来表达在乎',
+    G:'愿意把你带进自己的社交圈', H:'和你一起制定目标并互相督促'
+  };
+  const caution = {
+    A:'你不太在意对方是不是时刻哄着你——但如果TA偶尔也需要被哄，别因为你自己不习惯就忽略TA的情绪。',
+    B:'你不太需要时时刻刻黏在一起——但注意，边界感强不等于冷漠，要确认TA在你真正需要时会出现。',
+    C:'你不太喜欢被计划框住——但完全没规划的生活可能让你在某个时刻突然慌神，留一点底线安排会更安心。',
+    D:'你对“新鲜感”要求不高——但对方如果总想往外跑，你们需要商量一个都能接受的节奏，别让TA觉得被泼冷水。',
+    E:'你不太爱把话聊得太深——但对方如果习惯用“聊透”来确认关系健康，你得学会偶尔接住TA的深度对话需求。',
+    F:'你不太看重对方为你做具体小事——但对方如果是行动派，记得肯定TA的付出，别让TA觉得做了也白做。',
+    G:'你不太需要共同社交——但对方如果朋友很多，约定好各自社交和共同社交的时间，比直接拒绝更有效。',
+    H:'你对“一起成长”没太大执念——但对方如果很有目标感，别把TA的督促当成压力，可以商量一个松弛的边界。'
+  };
+  const sceneMap = {
+    A:'下次你们意见不合时，看TA是先接住你的情绪，还是先争对错——这比任何标签都更能说明TA适不适合你。',
+    B:'下次你想一个人待着时，看TA是能自己安排不打扰你，还是会追问“你是不是不爱我了”——这能看出TA是否真懂你的边界。',
+    C:'下次遇到需要做决定的事，看TA是认真和你一起商量、还是拍脑袋就定、出了问题再甩锅——这能看出TA是不是你要的靠谱型。',
+    D:'下次你们连续几周都在重复同样的周末时，看TA会不会主动提议“换个地方”——这能看出TA有没有你要的新鲜感。',
+    E:'下次你们聊到某个话题时，看TA是愿意往深了聊，还是很快转开——这能看出TA能不能满足你的深聊需求。',
+    F:'下次你生病或累的时候，看TA是只嘴上说“多喝热水”，还是真的买药做饭——这能看出TA是不是行动派。',
+    G:'下次TA和朋友聚会时，看TA是自然把你带上，还是总让你待在家里——这能看出TA愿不愿意共享社交圈。',
+    H:'下次你定了一个目标时，看TA是和你一起定计划互相监督，还是觉得你“太卷了”——这能看出TA适不适合和你一起成长。'
+  };
+  const mainPortrait = `最适合你的，是${actDetail[a]}的人。${why[a]}。同时，TA也要能${actB[b]}，因为你的「${names[DIM.indexOf(b)]}」同样靠前。`;
+  const supplement = `反过来，你最不感冒的是「${names[DIM.indexOf(lo)]}」（${loScore} 分）。${caution[lo]}`;
+
+  return `${mainPortrait} ${supplement} 一个可验证的场景：${sceneMap[a]}`;
+}
+function renderBase(){
+if(state==='cover'){const count=answers.filter(a=>a.length).length;app.innerHTML=`<section class="cover"><span class="pill">亲密关系探索 · 28 题 · 约 5 分钟</span><h1>找到最适合你的<br>伴侣类型</h1><p>心动各有理由，舒服的关系也有迹可循。</p><img class="scene" src="${photo}" alt="柔和日光下的双人沙发与舒适客厅"><div class="facts"><div><strong>08</strong><span>伴侣类型</span></div><div><strong>08</strong><span>关系维度</span></div><div><strong>01</strong><span>更懂自己的机会</span></div></div><button class="primary" onclick="start()">${count?'继续测试 · 已答 '+count+' 题':'开始探索'} <span aria-hidden="true">→</span></button>${count?'<p><button class="link" onclick="reset()">重新开始</button></p>':''}<div class="bottom-note">没有标准答案，跟着第一感觉选择就好。<br>娱乐与自我探索用途，不作心理诊断或择偶结论。</div></section>`;return;}
+if(state==='loading'){app.innerHTML='<section class="loading" role="status"><div class="dots"><i></i><i></i><i></i></div><h3>正在整理你的关系偏好…</h3><p class="muted">让每一份期待，都被好好看见</p></section>';return;}
+if(state==='quiz'){const q=Q[index],a=answers[index],multi=isMulti(index);app.innerHTML=`<section class="quiz"><div class="toolbar"><button class="icon" onclick="back()" title="返回上一题" aria-label="返回上一题">←</button><span class="muted">${index<10?'01 · 日常里的心动':index<14?'02 · 你珍惜的特质':index<24?'03 · 长久相处的模样':'04 · 关系里的优先级'}</span><button class="icon" onclick="state='cover';render()" title="返回首页，保留进度" aria-label="返回首页">⌂</button></div><div class="progress"><div class="track" role="progressbar" aria-valuenow="${answers.filter(a=>a.length).length}" aria-valuemin="0" aria-valuemax="28"><div class="fill" style="width:${answers.filter(a=>a.length).length/28*100}%"></div></div><span>${String(index+1).padStart(2,'0')} / 28</span></div><div class="question-top"><span class="pill">Q${index+1}</span><span class="muted">${multi?'多选 · 最多 3 项':'单选'}</span></div><h2 id="question">${q[0]}</h2><div class="muted">${multi?'选出最贴近你的 1–3 项':'选择最贴近你的一项'}</div><div class="options ${multi?'multi':''}" role="group" aria-labelledby="question">${q.slice(1).map((o,j)=>`<button class="option ${a.includes(j)?'selected':''}" aria-pressed="${a.includes(j)}" ${multi&&a.length===3&&!a.includes(j)?'disabled':''} onclick="select(${j})"><span class="letter">${String.fromCharCode(65+j)}</span><span class="label">${o.split('|')[0]}</span><span class="mark" aria-hidden="true">✓</span></button>`).join('')}</div><button class="primary next" ${!a.length?'disabled':''} onclick="next()"><span>${multi?'已选 '+a.length+' / 3':'跟随你的真实感受'}</span><span>${index===27?'查看我的结果':'下一题'} →</span></button><p class="bottom-note">答案自动保存在当前浏览器</p></section>`;return;}
+const r=result,t=types[r.main],s=types[r.sub],max=Math.max(...Object.values(r.total),1);app.innerHTML=`<section class="result" style="--theme:${t.color};--tint:${t.tint}"><div class="toolbar"><span class="pill">你的专属关系偏好</span><button class="link" onclick="state='quiz';index=27;render()">修改答案</button></div><div class="result-hero" style="margin-top:22px"><img src="${photo}" alt="温暖明亮的居家相处空间"><span>${r.main} + ${r.sub} · ${combo[r.main+r.sub]||names[DIM.indexOf(r.main)]+'，也珍惜'+names[DIM.indexOf(r.sub)]}</span></div><h1>${r.main}型 · ${t.name}</h1><div class="tags">${t.tags.map(x=>'<span>'+x+'</span>').join('')}</div><div class="type-pair"><div class="type-card"><span class="muted">主型 · 核心期待</span><b>${r.main} ${t.name}</b></div><div class="type-card"><span class="muted">副型 · 另一面偏好</span><b>${r.sub} ${s.name}</b></div></div><div class="report"><section><h3>你是怎样的人</h3><p>${t.self}</p></section><section><h3>最适合你的伴侣</h3><p>${t.core}${t.portrait}</p></section><section class="wide"><h3>你的副型，让画像更完整</h3><p>${combo[r.main+r.sub]||'你也期待'+s.core}。除了${names[DIM.indexOf(r.main)]}，你也看重${names[DIM.indexOf(r.sub)]}：${s.portrait}</p></section><section class="wide"><h3>你的八维关系偏好</h3>${DIM.map((d,i)=>`<div class="score-row"><span>${d} · ${names[i]}</span><div class="track"><div class="fill" style="width:${r.total[d]/max*100}%"></div></div><span>${r.total[d]}</span></div>`).join('')}<p class="muted">原始偏好分，各维度题目数量不同，不代表能力或人群百分比。</p></section><section><h3>值得探索的组合</h3><p>${t.best.map(d=>r.main+'「'+t.name+'」 + '+d+'「'+types[d].name+'」：'+(combo[r.main+d]||types[d].core)).join('<br>')}</p></section><section><h3>需要多一点磨合</h3><p>与${t.caution}型「${types[t.caution].name}」相处时，${t.risk}</p></section></div><h3>给你的一句话</h3><blockquote>${t.advice}</blockquote><div class="actions"><button class="primary" onclick="downloadResult()">↓ 保存结果图</button><button class="secondary" onclick="share()">邀请 TA 来测 ↗</button></div><div class="footer">类型是理解彼此的起点，真实的人远比标签丰富。<br>娱乐与自我探索用途 · <button class="link" onclick="reset()">再测一次</button></div></section>`;
+}
+function downloadResult(){const r=result,t=types[r.main],s=types[r.sub],c=document.createElement('canvas');c.width=900;c.height=1200;const x=c.getContext('2d');x.fillStyle='#FDF8F3';x.fillRect(0,0,900,1200);x.fillStyle=t.tint;x.fillRect(50,50,800,1100);x.textAlign='center';x.fillStyle='#9A8F86';x.font='22px sans-serif';x.fillText('心迹 / HEART NOTES',450,120);x.fillStyle='#4A4038';x.font='44px serif';x.fillText(r.main+'型 · '+t.name,450,220);x.font='24px sans-serif';x.fillText('我的理想伴侣画像',450,170);x.fillStyle=t.color;x.beginPath();x.arc(450,440,140,0,Math.PI*2);x.fill();x.fillStyle='#fff';x.font='120px Georgia';x.fillText(r.main+' + '+r.sub,450,480);x.fillStyle='#4A4038';x.font='26px sans-serif';x.fillText(t.tags.join('  ·  '),450,660);x.fillText('副型：'+r.sub+' '+s.name,450,730);x.font='23px sans-serif';const sentence=combo[r.main+r.sub]||names[DIM.indexOf(r.main)]+'，也珍惜'+names[DIM.indexOf(r.sub)];x.fillText(sentence,450,800);x.strokeStyle=t.color;x.beginPath();x.moveTo(220,875);x.lineTo(680,875);x.stroke();x.font='20px sans-serif';const chars=[...t.advice];let row='',y=940;for(const char of chars){if(x.measureText(row+char).width>640){x.fillText(row,450,y);row='';y+=36;}row+=char;}x.fillText(row,450,y);x.fillStyle='#9A8F86';x.font='18px sans-serif';x.fillText('28 道题 · 8 个关系维度 · 找到舒服的相处方式',450,1080);const a=document.createElement('a');a.download='心迹-'+r.main+r.sub+'-伴侣画像.png';a.href=c.toDataURL('image/png');a.click();notify('结果图已生成');}
+async function share(){const url=location.href.split('#')[0];if(location.protocol==='file:'){notify('上线后可分享页面链接；现在可以保存结果图');return;}try{if(navigator.share)await navigator.share({title:'心迹 · 找到最适合你的伴侣类型',text:'一起看看，我们期待怎样的关系？',url});else{await navigator.clipboard.writeText(url);notify('测试链接已复制');}}catch(e){if(e.name!=='AbortError')notify('暂时无法分享，请复制浏览器地址');}}
+function render(){renderBase();if(state==='result'&&result){const pf=profileFor(result),t=types[result.main],s=types[result.sub],box=document.querySelector('.report');if(box){const insight=document.createElement('section');insight.className='wide';insight.innerHTML='<h3>你的专属偏科画像</h3><p><strong>「'+(comboProfile[result.main+result.sub]||t.name+' × '+s.name)+'」</strong>：'+pf.contrast+'</p>'+(pf.high.length?'<p>高分标签：'+pf.high.map(d=>'【'+d+' '+highTags[d]+'】').join('、')+'</p>':'')+(pf.low.length?'<p>提醒标签：'+pf.low.map(d=>'【'+d+' '+lowTags[d]+'】').join('、')+'</p>':'')+'<blockquote>'+pf.contrast+' 小心：'+t.risk+'</blockquote>';box.insertBefore(insight,box.firstElementChild);const heading=[...box.querySelectorAll('h3')].find(h=>h.textContent==='值得探索的组合');if(heading)heading.insertAdjacentHTML('beforebegin','<section class="wide"><h3>组合结论</h3><p>你的主型与副型共同组成「'+(comboProfile[result.main+result.sub]||t.name+' × '+s.name)+'」。这意味着：'+t.core+'同时，你也强烈在意'+names[DIM.indexOf(result.sub)]+'。同样是'+t.name+'，副型不同，关系里的优先级也会不同。</p></section>');}}}
+const oldRender=render;render=function(){oldRender();if(state==='result'&&result){const story=storyFor(result),sections=[...document.querySelectorAll('.report section')];const self=sections.find(x=>x.querySelector('h3')?.textContent==='你是怎样的人'),partner=sections.find(x=>x.querySelector('h3')?.textContent==='最适合你的伴侣');if(self)self.querySelector('p').textContent=story.self;if(partner)partner.querySelector('p').textContent=story.partner;}};render();
+const reportRender=render;render=function(){reportRender();if(state==='result'&&result){const x=expandReport(result),ss=[...document.querySelectorAll('.report section')],a=ss.find(n=>n.querySelector('h3')?.textContent==='你是怎样的人'),b=ss.find(n=>n.querySelector('h3')?.textContent==='最适合你的伴侣');if(a)a.querySelector('p').textContent=x.self;if(b)b.querySelector('p').textContent=x.partner;}};render();
+const removeExtraSections=()=>document.querySelectorAll('.report section').forEach(n=>{const h=n.querySelector('h3')?.textContent;if(h==='你的专属偏科画像'||h==='组合结论')n.remove();if(h==='你是怎样的人'||h==='最适合你的伴侣'){const p=n.querySelector('p');if(p&&p.textContent.length>120)p.textContent=p.textContent.slice(0,120)+'…';}});removeExtraSections();
+const finalRender=render;render=function(){finalRender();if(state==='result'){document.querySelectorAll('.report section').forEach(n=>{const h=n.querySelector('h3')?.textContent;if(h==='你的专属偏科画像'||h==='组合结论'||h==='你是怎样的人')n.remove();if(h==='最适合你的伴侣')n.classList.add('wide');});}};render();
+const partnerRender=render;render=function(){partnerRender();if(state==='result'&&result){const n=[...document.querySelectorAll('.report section')].find(x=>x.querySelector('h3')?.textContent==='最适合你的伴侣');if(n)n.querySelector('p').textContent=partnerFor(result);}};render();
+const titlePairs={AB:['需要呼吸感的黏人精','想被哄，也想保留自己的房间。'],AC:['要浪漫也要面包的清醒派','会把日子过稳，也期待被温柔偏爱。'],AD:['被哄着去冒险的心动派','有人接住情绪，才有勇气一起出发。'],AE:['既要共情又要深聊的灵魂派','先被理解，再把心事聊到深处。'],BC:['有边界的生活搭档','各自自在，也愿意把日子一起安排好。'],CD:['有预算的冒险家','稳定是底气，新鲜是生活的火花。'],DG:['社交冒险双开','热闹要一起分享，故事要一起制造。'],DH:['边玩边成长的行动派','不只追求刺激，更想把经历变成共同成长。'],EH:['高知成长型伴侣','聊得深，也愿意把想法变成行动。'],FH:['务实上进型','把照顾落到日常，也把未来一起往前推。']};
+const dimVoice={A:'及时回应和偏爱',B:'边界与呼吸感',C:'稳定和靠谱',D:'新鲜感与共同出发',E:'深聊和精神共鸣',F:'具体的照顾',G:'共享热闹与朋友圈',H:'一起成长'};
+function dynamicResult(r){const order=[...DIM].sort((a,b)=>r.total[b]-r.total[a]),a=order[0],b=order[1],c=order[2],low=[...DIM].sort((x,y)=>r.total[x]-r.total[y])[0],pair=a+b;const title=titlePairs[pair]||`${dimVoice[a]}与${dimVoice[b]}派`;const sketch=`你把${dimVoice[a]}放在心上，也需要${dimVoice[b]}来保持舒服。`;const portrait=`你适合的关系，要有${dimVoice[a]}作为主旋律，再用${dimVoice[b]}和${dimVoice[c]}把日常撑起来。对方愿意主动参与生活，${low==='D'?'不把每一天过成重复流程。':low==='B'?'也懂得给彼此留一点空间。':'不只说好听的话，而是把在乎做出来。'}`;const match=`优先选择愿意${dimVoice[a]}、同时尊重你对${dimVoice[b]}需求的人；相处会更轻松。`;return{title:title[0],sketch:title[1],portrait,match};}
+const structuredRender=render;render=function(){structuredRender();if(state==='result'&&result){const d=dynamicResult(result),report=document.querySelector('.report');if(report){
+  const sections=[...report.querySelectorAll(':scope > section')];
+  sections.forEach(n=>{const h=n.querySelector('h3')?.textContent;if(['你的副型，让画像更完整','值得探索的组合','需要多一点磨合','你的专属偏科画像','组合结论','匹配度建议'].includes(h))n.remove();});
+  const title=document.createElement('section');title.className='wide';title.innerHTML='<h3>你的专属头衔</h3><p>'+d.sketch+'</p>';report.insertBefore(title,report.firstElementChild);
+  const score=[...report.querySelectorAll('h3')].find(h=>h.textContent==='你的八维关系偏好')?.parentElement;
+  if(false){
+    const trap={
+      A:'你可能因为TA一次没及时回消息就反复揣测，把小事放大成“不在乎”',
+      B:'TA想靠近时你习惯性后退，久了对方会以为你不需要TA',
+      C:'计划被打乱时你容易焦虑，并把情绪转成对TA的挑剔',
+      D:'新鲜感退去后你容易觉得“没意思”，却忘了稳定也需要经营',
+      E:'你容易把“聊透”当成关系健康的唯一指标，忽略行动和陪伴',
+      F:'你习惯用做事代替表达，TA可能长期感受不到“被爱”的语言',
+      G:'社交安排过满时，你们可能很久没有一次真正的二人对话',
+      H:'你把成长目标带进关系，TA可能感到被考核而不是被爱'
+    };
+    const trapFix={
+      A:'约定一个“报备频率”就好，不必要求秒回；把“你没回我”换成“我刚才有点慌，想听你说一句”',
+      B:'主动说出“我需要空间，不是不需要你”，给TA一个明确的信号',
+      C:'把“计划变了”和“TA不在乎我”分开，先说感受再谈安排',
+      D:'每月一起定一件“小而新”的事，把新鲜感变成可执行的约定',
+      E:'每周留一次“只做事不深聊”的陪伴，让关系有松弛的一面',
+      F:'练习一句直接的情绪表达，比如“今天有点累，想被抱一下”',
+      G:'固定一周一个“只有你们俩”的晚上，不被朋友占用',
+      H:'把督促改成邀请：“要不要一起”，而不是“你应该”'
+    };
+    const lo=[...DIM].sort((x,y)=>result.total[x]-result.total[y])[0];
+    const advice=document.createElement('section');advice.className='wide';
+    advice.innerHTML='<h3>你们最容易卡在哪</h3><p><strong>雷区：</strong>'+trap[lo]+'</p><p><strong>怎么破：</strong>'+trapFix[lo]+'</p>';
+    score.after(advice);
+  }
+}}};render();
+const rawDynamicResult=dynamicResult;dynamicResult=function(r){const d=rawDynamicResult(r);if(Array.isArray(d.title)){d.sketch=d.title[1];d.title=d.title[0];}return d;};
+const pairVisuals={A:'#d98e73',B:'#789788',C:'#b69a69',D:'#b78064',E:'#8d8ca2',F:'#819b82',G:'#c18c9a',H:'#7799a0'};
+function visualFor(r){const pair=r.main+r.sub;return{url:photo+'&sig='+pair,theme:pairVisuals[r.main]||'#d98e73',pair};}
+const previousStructured=render;render=function(){previousStructured();if(state==='result'&&result){const hero=document.querySelector('.result-hero'),title=[...document.querySelectorAll('.report h3')].find(h=>h.textContent==='你的专属头衔'||h.textContent.startsWith('你是【'));if(hero)hero.remove();if(title){const d=dynamicResult(result),section=title.parentElement;section.className='wide';section.innerHTML='<blockquote>'+d.sketch+'</blockquote>';const cards=document.querySelector('.type-pair');if(cards)cards.after(section);}}};
+const humanTitles={DG:['把无聊按下删除键的人','你是那种一有新鲜念头就想拉人一起出发的人。热闹不是背景，而是你表达亲近的方式；你要的是共同经历，而不是各过各的。'],DA:['会把心动变成行程表的人','你喜欢突然出发，也在意有人愿意陪你把临时起意变成真实经历。对你来说，爱不是说出来的，是一起去看、去玩、去记住。'],DC:['先出发再研究攻略的人','你很难满足于重复的日子，真正让你兴奋的是未知和共同探索。你不需要被安排得面面俱到，只希望身边有人愿意接住你的下一次起意。'],DE:['把聊天聊成冒险地图的人','你要的不只是去过哪里，更是一路上有没有人和你分享发现。新鲜感让你心动，而聊得来会让短暂的热闹变成值得回味的故事。'],GA:['热闹里最会点名爱的人','你喜欢把喜欢的人带进自己的生活现场：一起见朋友、一起制造笑点、一起留下故事。对你来说，亲密不是关起门来，而是有人愿意并肩出现。'],AD:['把安稳过成连续剧的人','你会被新鲜感点亮，也希望每次兴奋之后有人记得照顾你的情绪。最理想的关系，是一起玩得尽兴，回到日常仍然愿意把彼此放在心上。'],AB:['想靠近全世界、也想被认真选中的人','你喜欢有趣的生活和及时的回应，最怕热闹散场后只剩自己。你要的不是黏住彼此，而是有人愿意主动把你写进他的下一站。']};
+const oldDynamic=dynamicResult;dynamicResult=function(r){const o=[...DIM].sort((a,b)=>r.total[b]-r.total[a]),a=o[0],b=o[1],key=a+b,base=humanTitles[key]||humanTitles[b+a]||['把生活过出自己节奏的人',`你对关系有自己的判断：既在意${dimVoice[a]}，也希望${dimVoice[b]}被认真对待。你不追求标准答案，只想和对的人把日子过得有回应。`];return{title:base[0],sketch:base[1],portrait:partnerFor(r),match:`优先选择愿意${dimVoice[a]}、也愿意主动和你一起生活的人。`};};
+</script>
+</body>
+</html>
+
